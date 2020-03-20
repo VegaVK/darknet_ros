@@ -4,7 +4,7 @@
   
   <!-- Use YOLOv3 -->
   <arg name="network_param_file"         default="$(find darknet_ros)/config/yolov3-flir.yaml"/>
-  <arg name="image" default="Thermal_Panorama" />
+  <arg name="image" default="flir_boson3/image_rect" />
 
 
   <!-- Include main launch file -->

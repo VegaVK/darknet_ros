@@ -1,7 +1,7 @@
 subscribers:
 
   camera_reading:
-    topic: /Thermal_Panorama
+    topic: /flir_boson3/image_rect
     queue_size: 1
 
 actions:
