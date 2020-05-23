@@ -147,7 +147,7 @@ if (CUDA_FOUND)
   )
 
   target_link_libraries(${PROJECT_NAME}_lib
-    cuda
+    
     cudart
     cublas
     curand
