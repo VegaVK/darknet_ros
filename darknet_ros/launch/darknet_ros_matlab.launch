@@ -3,15 +3,15 @@
 <launch>
   <!-- Console launch prefix -->
   <arg name="launch_prefix" default=""/>
-  <arg name="image" default="/Thermal_Panorama" />
+  <arg name="image" default="/camera" />
 
   <!-- Config and weights folder. -->
   <arg name="yolo_weights_path"          default="$(find darknet_ros)/yolo_network_config/weights"/>
   <arg name="yolo_config_path"           default="$(find darknet_ros)/yolo_network_config/cfg"/>
 
   <!-- ROS and network parameter files -->
-  <arg name="ros_param_file"             default="$(find darknet_ros)/config/ros-flir.yaml"/>
-  <arg name="network_param_file"         default="$(find darknet_ros)/config/yolov2-tiny.yaml"/>
+  <arg name="ros_param_file"             default="$(find darknet_ros)/config/ros-rgb-matlab.yaml"/>
+  <arg name="network_param_file"         default="$(find darknet_ros)/config/yolov3.yaml"/>
 
   <!-- Load parameters -->
   <rosparam command="load" ns="darknet_ros" file="$(arg ros_param_file)"/>
