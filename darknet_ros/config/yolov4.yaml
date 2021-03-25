@@ -1,0 +1,14 @@
+yolo_model:
+
+  config_file:
+    name: yolov4_kitti_pano.cfg
+  weight_file:
+    name: yolov4_kitti_pano_best.weights
+  threshold:
+    value: 0.3
+  detection_classes:
+    names:
+      - person
+      - bicycle
+      - car
+      
